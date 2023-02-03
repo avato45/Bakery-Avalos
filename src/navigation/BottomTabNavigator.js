@@ -4,7 +4,7 @@ import Ionicons from "@expo/vector-icons/Ionicons"
 
 import ShopNavigator from "./ShopNavigator"
 import CartNavigator from "./CartNavigator"
-import OrdersNavigator from "./OrdersNavigator"
+//import OrdersNavigator from "./OrdersNavigator"
 
 const BottomTabs = createBottomTabNavigator();
 
