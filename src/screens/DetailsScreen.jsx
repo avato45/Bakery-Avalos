@@ -1,10 +1,10 @@
 import { StyleSheet, Text, View, Button } from 'react-native'
 import React from 'react'
 
-const DetailsScreen = ({ navigation }) => {
+const DetailsScreen = ({ navigation, route }) => {
   return (
     <View style={styles.container}>
-      <Text>DetailsScreen</Text>
+      <Text>{route.params.name}</Text>
       <Button
       title='Go to Categories'
       onPress={() => navigation.popToTop()}
