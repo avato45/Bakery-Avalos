@@ -1,14 +1,18 @@
 import { StyleSheet, Text, View, Button, FlatList } from 'react-native'
 import React from 'react'
 import CategoriesItem from '../components/CategoriesItem'
-import { useSelector } from 'react-redux'
+
+import { useSelector, useDispatch } from 'react-redux'
+import { selectedCategory } from "../store/actions/category.action"
 
 const CategoriesScreens = ({ navigation }) => {
   const categories = useSelector((state) => state.categories.categories)
+  const dispatch = useDispatch()
 
   const handleSelectedCategory = (item) => {
+    dispatch(selectedCategory(item.id))
     navigation.navigate("Products", { 
-      categoryId: item.id,
+      //categoryId: item.id,
       title: item.title,
     })
   }
