@@ -11,10 +11,12 @@ const DetailsScreen = ({ navigation, route }) => {
   
   return (
     <View style={styles.container}>
-      <Text>{route.params.name}</Text>
-      <Button
-      title='Go to Categories'
-      onPress={() => navigation.popToTop()}
+      <Text>{bread.name}</Text>
+      <Text>{bread.description}</Text>
+      <Text>{bread.price}</Text>
+      <Button 
+      title="Add to Cart" 
+      onPress={() => console.log("agregar al carrito")} 
       />
     </View>
   )
