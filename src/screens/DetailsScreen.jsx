@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View, Button } from 'react-native'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 
 const DetailsScreen = ({ navigation, route }) => {
@@ -13,10 +13,10 @@ const DetailsScreen = ({ navigation, route }) => {
     <View style={styles.container}>
       <Text>{bread.name}</Text>
       <Text>{bread.description}</Text>
-      <Text>{bread.price}</Text>
+      <Text>${bread.price}</Text>
       <Button 
       title="Add to Cart" 
-      onPress={() => console.log("agregar al carrito")} 
+      onPress={() => console.log("Add to Cart")} 
       />
     </View>
   )
