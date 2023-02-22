@@ -10,10 +10,10 @@ const CartItem = ({ item, onDelete }) => {
       </View>
       <View style={styles.detail}>
         <View>
-          <Text>Quantity: {item.quantity}</Text>
+          <Text>Cantidad: {item.quantity}</Text>
           <Text>${item.price}</Text>
         </View>
-        <TouchableOpacity onPress={() => onDelete()}>
+        <TouchableOpacity onPress={() => onDelete(item.id)}>
           <Ionicons name="trash" size={24} color="red" />
         </TouchableOpacity>
       </View>

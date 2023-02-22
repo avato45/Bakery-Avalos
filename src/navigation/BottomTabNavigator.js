@@ -1,12 +1,12 @@
 import { StyleSheet, View, Text } from "react-native"
-import { createBottomTabNavigator} from "@react-navigation/bottom-tabs"
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 import Ionicons from "@expo/vector-icons/Ionicons"
 
 import ShopNavigator from "./ShopNavigator"
 import CartNavigator from "./CartNavigator"
 import OrdersNavigator from "./OrdersNavigator"
 
-const BottomTabs = createBottomTabNavigator();
+const BottomTabs = createBottomTabNavigator()
 
 export default BottomTabNavigator = () => {
   return (
@@ -24,8 +24,8 @@ export default BottomTabNavigator = () => {
         options={{
           tabBarIcon: () => (
             <View style={styles.icon}>
-              <Ionicons name="home" size={20} color="black" />
-              <Text>Store</Text>
+              <Ionicons name="home" size={25} color="black" />
+              <Text>Tienda</Text>
             </View>
           ),
         }}
@@ -36,8 +36,8 @@ export default BottomTabNavigator = () => {
         options={{
           tabBarIcon: () => (
             <View style={styles.icon}>
-              <Ionicons name="cart" size={20} color="black" />
-              <Text>Cart</Text>
+              <Ionicons name="cart" size={25} color="black" />
+              <Text>Carrito</Text>
             </View>
           ),
         }}
@@ -48,8 +48,8 @@ export default BottomTabNavigator = () => {
         options={{
           tabBarIcon: () => (
             <View style={styles.icon}>
-              <Ionicons name="list" size={20} color="black" />
-              <Text>Orders</Text>
+              <Ionicons name="list" size={25} color="black" />
+              <Text>Ordenes</Text>
             </View>
           ),
         }}
@@ -60,17 +60,17 @@ export default BottomTabNavigator = () => {
 
 const styles = StyleSheet.create({
   tabBar: {
+    backgroundColor: "#fff",
+    paddingTop: 15,
+    borderTopEndRadius: 30,
+    borderTopStartRadius: 30,
+    height: 85,
+    position: "absolute",
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 0.1,
+    shadowOpacity: 0.2,
     shadowRadius: 5,
     elevation: 5,
-    position: "absolute",
-    bottom: 25,
-    left: 20,
-    right: 20,
-    borderRadius: 15,
-    height: 90,
   },
   icon: {
     flex: 1,

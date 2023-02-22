@@ -1,7 +1,7 @@
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native"
 import React from "react"
 
-const ProductsItem = ({item, onSelected}) => {
+const ProductsItem = ({ item, onSelected }) => {
   return (
     <TouchableOpacity
       style={styles.itemContainer}
