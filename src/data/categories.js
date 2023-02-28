@@ -5,7 +5,7 @@ export const CATEGORIES = [
     id: "1",
     title: "Harinas puras",
     img: "https://i.blogs.es/95d4c3/harina-trigo-tipos/1366_2000.jpg",
-    color: COLORS.priamry,
+    color: COLORS.primary,
   },
   {
     id: "2",

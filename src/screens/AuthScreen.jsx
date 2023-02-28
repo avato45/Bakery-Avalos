@@ -15,12 +15,12 @@ const AuthScreen = () => {
         <View style={styles.container}>
             <Text style={styles.title}>Sign in</Text>
             <Text>Formulary</Text>
-        </View>
-        <View style={styles.prompt}>
-            <Text style={styles.promptMessage}>Alredy Sign in?</Text>
-            <TouchableOpacity onPress={() => console.log("log in")}>
-                <Text style={styles.promptButton}>Log in</Text>
-            </TouchableOpacity>
+            <View style={styles.prompt}>
+                <Text style={styles.promptMessage}>Alredy Sign in?</Text>
+                <TouchableOpacity onPress={() => console.log("log in")}>
+                    <Text style={styles.promptButton}>Log in</Text>
+                </TouchableOpacity>
+            </View>
         </View>
     </KeyboardAvoidingView>
   )

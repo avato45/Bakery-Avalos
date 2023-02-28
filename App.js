@@ -1,6 +1,6 @@
 import { useFonts } from "expo-font"
 import { NavigationContainer } from "@react-navigation/native"
-import MainNavigation from "./src/navigation"
+import MainNavigation from "./src/navigation/Index"
 import { Provider } from "react-redux"
 
 import store from "./src/store"

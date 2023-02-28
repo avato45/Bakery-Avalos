@@ -36,7 +36,7 @@ export const deleteOrder = id => {
       })
       dispatch({ type: DELETE_ORDER, orderId: id })
     } catch (error) {
-      console.log(error)
+      console.log(error.message)
     }
   }
 }
